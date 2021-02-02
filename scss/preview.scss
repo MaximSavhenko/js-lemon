@@ -1,0 +1,9 @@
+.preview {
+    height: 100%;
+    &__wrapp {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+}
