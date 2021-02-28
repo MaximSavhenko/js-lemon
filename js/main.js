@@ -1,77 +1,62 @@
-function homeWerk1_1() {
+// HOME WORK # 1 +++++++++++++++++++++++
+
+
+
+function numCounter() {
         
         function realization_1() {
             let numb;
             for (let i = 0; i < 9; i++) {
                 ++numb 
+                if (numb = '0') {
+                    console.log(numb + ' =' + ' Ноль');
+                } 
                 if (numb = 1) {
-                    console.log('Один');
+                    console.log(numb + ' =' + ' Один');
                 } 
                 if (numb = 2) {
-                    console.log('Два');
+                    console.log(numb + ' =' + ' Два');
                 } 
                 if (numb = 3) {
-                    console.log('Три');
+                    console.log(numb + ' =' + ' Три');
                 } 
                 if (numb = 4) {
-                    console.log('Четыре');
+                    console.log(numb + ' =' + ' Четыре');
                 } 
                 if (numb = 5) {
-                    console.log('Пять');
+                    console.log(numb + ' =' + ' Пять');
                 } 
                 if (numb = 6) {
-                    console.log('Шесть');
+                    console.log(numb + ' =' + ' Шесть');
                 } 
                 if (numb = 7) {
-                    console.log('Семь');
+                    console.log(numb + ' =' + ' Семь');
                 } 
                 if (numb = 8) {
-                    console.log('Восемь');
+                    console.log(numb + ' =' + ' Восемь');
                 } 
                 if (numb = 9) {
-                    console.log('Девять');
+                    console.log(numb + ' =' + ' Девять');
                     break;
                 }           
             }
         }
+        realization_1();
 
-        // realization_1();
+        function realization_2() {
+            let num = ['Ноль','Один','Два','Три','Четыре','Пять','Шесть','Семь','Восемь','Девять']
+            let count = 0; 
+            for (let i = 0; i < num.length; i++) {
+                console.log( count++ + ' = ' + num[i]);
+            }
+        }
 
-
-        // function realization_2() {
-        //     let nameNum = {
-        //         0 : 'Ноль' ,
-        //         1 : 'Один' ,
-        //         2 : 'Два' ,
-        //         3 : 'Три' ,
-        //         4 : 'Четыре' ,
-        //         5 : 'Пять' ,
-        //         6 : 'Шесть' ,
-        //         7 : 'Семь' ,
-        //         8 : 'Восемь' ,
-        //         9 : 'Девять' 
-        //     }
-
-        //     // for (let value of Object.values(nameNum)) {
-        //     //     console.log(value);
-        //     //   }
-        //     for (let i = 0; i < 10; i++) {
-        //         let result;
-        //         let value = Object.values(nameNum)
-        //         if (value = i) {
-        //             result = value + [i];
-        //             console.log(result);
-        //         }
-                
-        //     }
-        // }
-
-        // realization_2();
+        realization_2()
 }
 
-homeWerk1_1();
+numCounter();
 
-function homeWerk1_2() {
+function negativeOrPositiveValue() {
     let num = -10;
 
     if (num > 0) {
@@ -83,11 +68,9 @@ function homeWerk1_2() {
     }
 }
 
-// homeWerk1_2();
+negativeOrPositiveValue(); 
 
-function homeWerk1_3() {
-    let unit = 'MB';
-    let quantity = 3;
+function unitCounter(unit , quantity) {
     
     if (unit == 'KB') {
         let result = Math.pow(1024, 1) * quantity;
@@ -101,9 +84,11 @@ function homeWerk1_3() {
     }
 }
 
-// homeWerk1_3();
+unitCounter('KB' , 1);
 
-function homeWerk1_4() {
+
+
+function customerCounter() {
     let loanPercentage = 3.2;
     let loanBody = 40000;
     let creditTerm = 5;
@@ -134,7 +119,55 @@ function homeWerk1_4() {
     
 }
 
-// homeWerk1_4();
+customerCounter();
+
+
+
+// HOME WORK # 2 +++++++++++++++++++++++
+
+function reverseString() {
+    let srt = "Hello , Max";
+     console.log(srt.split("").reverse().join(""));
+}
+
+reverseString();
+
+function factorial(num) {
+    let count = 1;
+    for (let i = 0; i < num; i++) {
+        count*= (num - i);
+    }
+    console.log(count);
+}
+
+factorial(8);
+
+function integer(numb) {
+
+    let count = 100;
+    for (let i = 0; i < count; i++) {
+       let integer = numb / i
+
+        if (Number.isInteger(integer)) {
+            console.log(integer);
+        }
+    }
+}
+
+integer(50);
+
+function sum(sum) {
+    
+}
+
+sum(30);
+
+
+
+
+
+
+
 
 
 
